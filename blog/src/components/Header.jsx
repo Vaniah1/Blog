@@ -29,19 +29,19 @@ const Header = () => {
         <div className="text-white lg:flex gap-4 items-center hidden">
           <a
             className=" text-white hover:text-blue-600 active:text-blue-600"
-            href="/"
+            href="https://www.google.com/"
           >
             <FaDribbble />
           </a>
           <a
             className=" text-white hover:text-blue-600 active:text-blue-600"
-            href="/"
+            href="https://www.instagram.com/"
           >
             <FaInstagram />
           </a>
           <a
             className=" text-white hover:text-blue-600 active:text-blue-600"
-            href="/"
+            href="https://twitter.com/"
           >
             <FaXTwitter />
           </a>
