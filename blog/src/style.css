@@ -739,6 +739,10 @@ video {
   .md\:flex {
     display: flex;
   }
+
+  .md\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {

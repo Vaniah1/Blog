@@ -7,7 +7,6 @@ const Header = () => {
     { path: "/", link: "Home" },
     { path: "/blogs", link: "Blogs" },
     { path: "/editor", link: "Editor" },
-    { path: "/signin", link: "Sign In" },
     { path: "/contact", link: "Contact" },
   ];
   return (
@@ -51,7 +50,7 @@ const Header = () => {
           </button>
         </div>
         {/* mobile menue button mobile screen */}
-        <div>
+        <div className="md:hidden">
           <button>
             <FaBars className="w-5 h-5" />
           </button>
