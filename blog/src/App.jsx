@@ -1,5 +1,13 @@
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
-import Create from "./components/Create";
+import { Outlet } from "react-router-dom";
+import "./style.css";
 import Header from "./components/Header";
-import Home from "./components/Home";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
+}
+export default App;
