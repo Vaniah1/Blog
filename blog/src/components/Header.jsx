@@ -10,7 +10,7 @@ const Header = () => {
     { path: "/contact", link: "Contact" },
   ];
   return (
-    <header className="bg-black text-white">
+    <header className="bg-black text-white fixed top-0 left-0 right-0">
       <nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between items-center">
         <a href="/" className="text-xl font-bold text-white hover:opacity-75">
           Bloggy<span className="text-orange-500">BG</span>
