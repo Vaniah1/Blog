@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaDribbble, FaInstagram, FaBars, FaXTwitter } from "react-icons/fa6";
+import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { useState } from "react";
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
   );
 
   return (
-    <header className="bg-black text-white fixed top-0 left-0 right-0">
+    <header className="bg-black text-white sticky top-0 left-0 right-0 z-50">
       <nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between items-center">
         <a href="/" className="text-xl font-bold text-white hover:opacity-75">
           Bloggy<span className="text-blue-600">BG</span>
@@ -85,11 +85,6 @@ const Header = () => {
           </button>
         </div>
         {/* mobile menue button mobile screen */}
-        <div className="md:hidden">
-          <button>
-            <FaBars className="w-5 h-5" />
-          </button>
-        </div>
       </nav>
     </header>
   );

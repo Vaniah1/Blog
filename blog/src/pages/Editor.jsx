@@ -1,5 +1,13 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 const Editor = () => {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 };
 
 export default Editor;

@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
 import "./style.css";
-import Header from "./components/Header";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
     <>
-      <Header />
-      <Outlet />
+      {/* <SignIn /> */}
+      <div>
+        <Outlet />
+      </div>
     </>
   );
 }
