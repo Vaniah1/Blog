@@ -11,7 +11,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-bold mb-4">Navigation</h3>
+            <h3 className="text-lg font-bold mb-4 text-blue-600">
+              Bloggy<span className="text-white">BG</span>
+            </h3>
             <ul className="space-y-2">
               {navItems.map(({ path, link }, index) => (
                 <li key={index}>
@@ -23,7 +25,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-bold mb-4">Social Media</h3>
+            <h3 className="text-lg font-bold mb-4 text-blue-600">
+              Social Media
+            </h3>
             <ul className="space-y-2">
               <li>
                 <a
@@ -53,9 +57,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p className="animate-pulse">
-            © 2023 Your Company. All rights reserved.
-          </p>
+          <p className="animate-pulse">© 2023 Bloggy. All rights reserved.</p>
         </div>
       </div>
     </footer>

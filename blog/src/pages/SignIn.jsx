@@ -35,7 +35,7 @@ export default function SignIn() {
       {showComponents && (
         <>
           {success ? (
-            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+            <div className="fixed inset-0 flex items-center justify-center bg-blue-600 bg-opacity-75 z-50">
               <section className="bg-black border-blue-600 text-white p-8 rounded-md">
                 <h1 className="text-2xl font-bold mb-4 flex items-center">
                   <FaUser className="mr-2" />
@@ -53,7 +53,7 @@ export default function SignIn() {
               </section>
             </div>
           ) : (
-            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 ">
+            <div className="fixed inset-0 flex items-center justify-center bg-blue-600 bg-opacity-75 z-50 ">
               <section className="bg-black border-blue-600 text-white p-8 rounded-md ">
                 <p
                   ref={errRef}

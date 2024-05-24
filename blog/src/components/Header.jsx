@@ -81,7 +81,7 @@ const Header = () => {
             <FaXTwitter />
           </a>
           <button className="bg-blue-600 px-6 py-2 font-medium rounded hover:bg-white hover:text-blue-600 transition-all duration-200 ease-in">
-            Sign In
+            <a href="/signin">Sign In</a>
           </button>
         </div>
         {/* mobile menue button mobile screen */}
