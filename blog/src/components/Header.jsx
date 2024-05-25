@@ -1,8 +1,19 @@
 import { NavLink } from "react-router-dom";
-import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import {
+  FaDribbble,
+  FaInstagram,
+  FaXTwitter,
+  FaBars,
+  FaXmark,
+} from "react-icons/fa6";
 import { useState } from "react";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   //navItems
   const navItems = [
     { path: "/", link: "Home" },
@@ -28,7 +39,7 @@ const Header = () => {
         </a>
 
         {/* Nav items */}
-        <ul className="md:flex gap-12 text-lg">
+        <ul className="md:flex gap-12 text-lg hidden">
           {navItems.map(({ path, link }, index) => (
             <li key={index} className="text-white hover:opacity-80">
               <NavLink to={path}>{link}</NavLink>
@@ -37,7 +48,7 @@ const Header = () => {
         </ul>
 
         {/* Search bar */}
-        <div className="relative">
+        <div className="relative hidden md:flex">
           <input
             type="text"
             placeholder="Search..."
@@ -61,9 +72,9 @@ const Header = () => {
         </div>
 
         {/* Menu icons */}
-        <div className="text-white lg:flex gap-4 items-center hidden">
+        <div className="text-white lg:flex gap-4 items-center md:flex hidden">
           <a
-            className=" text-white hover:text-blue-600 active:text-blue-600"
+            className=" text-white hover:text-orange-600 active:text-blue-600"
             href="https://www.google.com/"
           >
             <FaDribbble />
@@ -84,8 +95,33 @@ const Header = () => {
             <a href="/signin">Sign In</a>
           </button>
         </div>
-        {/* mobile menue button mobile screen */}
+        {/* mobile menue button display mobile screen */}
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="cursor-pointer">
+            {isMenuOpen ? (
+              <FaXmark className="w-5 h-5" />
+            ) : (
+              <FaBars className="w-5 h-5" />
+            )}
+          </button>
+        </div>
       </nav>
+      {/* menu items mobile */}
+      <div>
+        <ul
+          className={`md:hidden text-black gap-12 text-lg block space-y-4 px-4 py-6 mt-14 bg-purple-400 ${
+            isMenuOpen
+              ? "sticky top-0 left-0 w-full transition-all ease-out duration-150"
+              : "hidden"
+          }`}
+        >
+          {navItems.map(({ path, link }, index) => (
+            <li key={index} className=" hover:opacity-80">
+              <NavLink to={path}>{link}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };

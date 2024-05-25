@@ -5,6 +5,7 @@ const Editor = () => {
   return (
     <>
       <Header />
+
       <Footer />
     </>
   );
