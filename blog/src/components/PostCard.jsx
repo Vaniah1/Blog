@@ -1,7 +1,5 @@
 import "../blog.css";
 import { useState } from "react";
-import empty from "../img/emptyheart.png";
-import full from "../img/fullheart.png";
 
 const PostCard = ({
   image,
@@ -44,7 +42,7 @@ const PostCard = ({
         </div>
         <div onClick={toggleLike} className="postcard--like">
           <img
-            src={like ? { full } : { empty }}
+            src={like ? "../img/fullheart.png" : "../img/emptyheart.png"}
             alt="like"
             className="like--button"
             title="Like"

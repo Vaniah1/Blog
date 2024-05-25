@@ -1,4 +1,5 @@
 import "../blog.css";
+import { Link } from "react-router-dom";
 
 const BlogCard = ({
   image,
@@ -10,13 +11,15 @@ const BlogCard = ({
 }) => {
   return (
     <div className=" mt-6 w-64 py-4 px-4  relative flex-col flex">
-      <img
-        src={image}
-        alt={title}
-        width={"300px"}
-        height={"300px"}
-        className="rounded border-blue-600 border-6 "
-      />
+      <Link to={`/blog`}>
+        <img
+          src={image}
+          alt={title}
+          width={"300px"}
+          height={"300px"}
+          className="rounded border-blue-600 border-6"
+        />
+      </Link>
       <div className="rounded mt-6 bg-none py-4 relative overflow-hidden flex-auto border-solid text-sm">
         <div className="rounded mt-6 bg-none py-4 overflow-hidden flex-col border-solid text-sm align-middle">
           <span className="font-bold break-words">{title}</span>
