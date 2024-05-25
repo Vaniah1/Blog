@@ -41,7 +41,10 @@ const Header = () => {
         {/* Nav items */}
         <ul className="md:flex gap-12 text-lg hidden">
           {navItems.map(({ path, link }, index) => (
-            <li key={index} className="text-white hover:opacity-80">
+            <li
+              key={index}
+              className="text-white hover:opacity-80 active:text-purple-600"
+            >
               <NavLink to={path}>{link}</NavLink>
             </li>
           ))}
@@ -74,7 +77,7 @@ const Header = () => {
         {/* Menu icons */}
         <div className="text-white lg:flex gap-4 items-center md:flex hidden">
           <a
-            className=" text-white hover:text-orange-600 active:text-blue-600"
+            className=" text-white hover:text-blue-600 active:text-blue-600"
             href="https://www.google.com/"
           >
             <FaDribbble />
@@ -109,15 +112,17 @@ const Header = () => {
       {/* menu items mobile */}
       <div>
         <ul
-          className={`md:hidden text-black gap-12 text-lg block space-y-4 px-4 py-6 mt-14 bg-purple-400 ${
+          className={`md:hidden text-white  gap-14 text-lg block space-y-8 px-4 py-2 mt-14 bg-black ${
             isMenuOpen
               ? "sticky top-0 left-0 w-full transition-all ease-out duration-150"
               : "hidden"
           }`}
         >
           {navItems.map(({ path, link }, index) => (
-            <li key={index} className=" hover:opacity-80">
-              <NavLink to={path}>{link}</NavLink>
+            <li key={index} className=" hover:text-blue-600">
+              <NavLink onClick={toggleMenu} to={path}>
+                {link}
+              </NavLink>
             </li>
           ))}
         </ul>
