@@ -1,0 +1,122 @@
+[
+   {
+    "id": 1,
+    "title": "The Most Ignored Cancer Symptoms in Women and Men",
+    "image": "https://invisiblepeople.tv/wp-content/uploads/2021/04/Cancer-patient.jpg",
+    "category": "Health",
+    "author": "Sarah Perez",
+    "authorPic": "author1.jpg",
+    "published_date": "October 4, 2023",
+    "reading_time": "5 minutes",
+    "content": "After heart disease, cancer is the second most common cause of death in the United States. According to Medical News Today, detecting and treating your cancer early on can improve your outlook. The signs of some cancers, however, can be subtle and easy to miss. Here are the most commonly ignored signs of cancer in both men and women.",
+    "tags": ["Health"]
+   },
+   {
+    "id":2,
+    "title": "The Best Exercise Plan For a Slim Waist, According to Fitness Trainers",
+    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1glQOJ.img?w=612&h=408&m=6&f=webp",
+    "category": "Fitness",
+    "author": "Emily Osmett",
+    "authorPic": "author1.jpg",
+    "published_date": "October 22, 2023",
+    "reading_time": "5 minutes",
+    "content": " Here, personal trainers specializing in weight loss set the record straight about common misconceptions they hear from people on the best way to get a smaller waist. Plus, find out what actually works.",
+    "tags": ["Fitness"]
+   },
+   {
+    "id":3,
+    "title": "What Drinking Alcohol Every Day Does To Your Body",
+    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1kwmCY.img?w=1920&h=1080&q=60&m=2&f=webp",
+    "category": "Health",
+    "author": "Joe Perez",
+    "authorPic": "author1.jpg",
+    "published_date": "June 13, 2022",
+    "reading_time": "5 minutes",
+    "content": "Some of The Harmful Effect Caused By Exceesive Alcohol Consumption",
+    "tags": ["Health"]
+   },
+   {
+    "id":4,
+    "title": "30 things to do in Europe at least once in your life",
+    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1mYFmA.img?w=1920&h=1080&q=60&m=2&f=webp",
+    "category": "Travel",
+    "author": "Jani Vinad",
+    "authorPic": "author1.jpg",
+    "published_date": "January 16, 2023",
+    "reading_time": "5 minutes",
+    "content": "One thing is certain, there's no shortage of things to do in Europe. It's a continent of diversity and history, filled with unique experiences and breathtaking scenery. From famous cities like Paris and Istanbul, to beautiful eastern European national parks and quirky Dutch architecture, everywhere you turn, there's something great to enjoy.",
+    "tags": ["Travel"]
+   },
+   {
+    "id":5,
+    "title": "Best Deals on Hotels and Holidays",
+    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1l2YLb.img?w=1920&h=1080&q=60&m=2&f=webp",
+    "category": "Travel",
+    "author": "Zuri Pearson",
+    "authorPic": "author1.jpg",
+    "published_date": "February 14, 2024",
+    "reading_time": "5 minutes",
+    "content": "Discover the best places to stay as you travel during the holidays with your family",
+    "tags": ["Travel"]
+   },
+   {
+    "id":6,
+    "title": "Big Yummy Italian Salad",
+    "image": "I love a big Italian salad! Crisp romaine, salty salami and cheese, briney pepperoncini, and toasty garlic breadcrumbs. YUM!",
+    "category": "Food",
+    "author": "Kimi Antonelli",
+    "authorPic": "author1.jpg",
+    "published_date": "May 13, 2024",
+    "reading_time": "5 minutes",
+    "content": "",
+    "tags": ["Food"]
+   },
+   {
+    "id":7,
+    "title": "Incredible Gochujang Sauce",
+    "image": "https://pinchofyum.com/wp-content/uploads/Gochujang-Sauce-1-2-960x1344.jpg",
+    "category": "Food",
+    "author": "Dylang Wang Chen",
+    "authorPic": "author1.jpg",
+    "published_date": "April 23, 2024",
+    "reading_time": "5 minutes",
+    "content": "This delightful, creamy, silky, incredible gochujang sauce is what I put on everything! Dipped with chicken, drizzled on a bowl, tossed in a salad  perfect in every way.",
+    "tags": ["Food"]
+   },
+   {
+    "id":8,
+    "title": "10 best new Netflix originals you need to add to your watch list",
+    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1nJgvi.img?w=1920&h=1080&q=60&m=2&f=webp",
+    "category": "Entertainment",
+    "author": "Allan Rick",
+    "authorPic": "author1.jpg",
+    "published_date": "May 8th, 2024",
+    "reading_time": "5 minutes",
+    "content": "Let's take a look at some of the best new originals that have recently dropped on the platform. Including nail-biting true crime docs, apocalyptic series, and some classic comedy specials, we've just sorted your telly watch-list for at least the next month. You're welcome",
+    "tags": ["Entertainment"]
+   },
+   {
+    "id":9,
+    "title": "12 British TV Shows That Predicted the Future Better Than Sci-Fi",
+    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1mieFf.img?w=1920&h=1080&q=60&m=2&f=webp",
+    "category": "Entertainment",
+    "author": "Javi Kareem",
+    "authorPic": "author1.jpg",
+    "published_date": "March 11, 2023",
+    "reading_time": "5 minutes",
+    "content": "British TV has long had a knack for blending sharp observation with cutting-edge imagination, sometimes foreseeing future events with uncanny accuracy. But which shows have done it best?",
+    "tags": ["Entertainment"]
+   },
+   {
+    "id":10,
+    "title": "Google Meet adaptive audio connects mics from multiple laptops for clearer audio",
+    "image": "https://duet-cdn.vox-cdn.com/thumbor/0x0:1600x1000/750x500/filters:focal(800x500:801x501):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/25460254/googleadaptiveaudio.jpg",
+    "category": "Technolgy",
+    "author": "Ollie James",
+    "authorPic": "author1.jpg",
+    "published_date": "December 30, 2023",
+    "reading_time": "5 minutes",
+    "content": "Google has introduced “adaptive audio,” a new Google Meet feature that offers Google Workspace users an alternative to dedicated videoconferencing equipment — if their package includes access to new AI features. ",
+    "tags": ["Technology"]
+   }
+]
