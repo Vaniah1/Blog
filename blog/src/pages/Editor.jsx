@@ -69,10 +69,11 @@ const Editor = () => {
     <>
       <Header />
       <div className="editor-container">
-        <h1 className="font-bold text-3xl">Editor Page</h1>
+        
+        <div  className="bg-black text-white w-full p-6 "><h1 className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl m-5">Editor Page</h1></div>
         <form
           onSubmit={handleSubmit}
-          className="editor-form grid grid-cols-2 gap-4"
+          className="editor-form grid grid-cols-2 gap-4 m-5"
         >
           <div className="form-group">
             <label htmlFor="title">Title:</label>
