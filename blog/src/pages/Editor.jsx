@@ -69,8 +69,11 @@ const Editor = () => {
     <>
       <Header />
       <div className="editor-container">
-        
-        <div  className="bg-black text-white w-full p-6 "><h1 className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl m-5">Editor Page</h1></div>
+        <div className="bg-black text-white w-full p-6 ">
+          <h1 className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl m-5">
+            Editor Page
+          </h1>
+        </div>
         <form
           onSubmit={handleSubmit}
           className="editor-form grid grid-cols-2 gap-4 m-5"
