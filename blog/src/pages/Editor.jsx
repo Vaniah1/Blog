@@ -84,6 +84,7 @@ const Editor = () => {
               type="text"
               name="title"
               id="title"
+              autoComplete="off"
               value={formData.title}
               onChange={handleChange}
               className="border border-gray-400 rounded-md px-2 py-1"
@@ -96,6 +97,7 @@ const Editor = () => {
               name="image"
               id="image"
               value={formData.image}
+              autoComplete="off"
               onChange={handleChange}
               className="border border-gray-400 rounded-md px-2 py-1"
             />
@@ -106,6 +108,7 @@ const Editor = () => {
               type="text"
               name="category"
               id="category"
+              autoComplete="off"
               value={formData.category}
               onChange={handleChange}
               className="border border-gray-400 rounded-md px-2 py-1"
@@ -117,6 +120,7 @@ const Editor = () => {
               type="text"
               name="author"
               id="author"
+              autoComplete="off"
               value={formData.author}
               onChange={handleChange}
               className="border border-gray-400 rounded-md px-2 py-1"
@@ -127,6 +131,7 @@ const Editor = () => {
             <input
               type="text"
               name="authorPic"
+              autoComplete="off"
               id="authorPic"
               value={formData.authorPic}
               onChange={handleChange}
@@ -138,6 +143,7 @@ const Editor = () => {
             <input
               type="text"
               name="published_date"
+              autoComplete="off"
               id="published_date"
               value={formData.published_date}
               onChange={handleChange}
@@ -149,6 +155,7 @@ const Editor = () => {
             <input
               type="text"
               name="reading_time"
+              autoComplete="off"
               id="reading_time"
               value={formData.reading_time}
               onChange={handleChange}
@@ -161,6 +168,7 @@ const Editor = () => {
               name="content"
               id="content"
               value={formData.content}
+              autoComplete="off"
               onChange={handleChange}
               className="border border-gray-400 rounded-md px-2 py-1"
             ></textarea>
@@ -172,6 +180,7 @@ const Editor = () => {
               name="tags"
               id="tags"
               value={formData.tags}
+              autoComplete="off"
               onChange={handleChange}
               className="border border-gray-400 rounded-md px-2 py-1"
             />
