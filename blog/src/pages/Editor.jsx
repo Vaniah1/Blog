@@ -68,11 +68,15 @@ const Editor = () => {
   return (
     <>
       <Header />
-      <div className="py-5 px-5">
-        <h1 className="font-bold text-3xl py-5">Editor Page</h1>
+      <div className="editor-container">
+        <div className="bg-black text-white w-full p-6 ">
+          <h1 className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl m-5">
+            Editor Page
+          </h1>
+        </div>
         <form
           onSubmit={handleSubmit}
-          className="editor-form grid grid-cols-2 mt-4 mb-4 py-4 px-4 gap-4"
+          className="editor-form grid grid-cols-2 gap-4 m-5"
         >
           <div className="form-group">
             <label htmlFor="title">Title:</label>

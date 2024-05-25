@@ -1,10 +1,10 @@
 import "../blog.css";
 
-const BlogCard = ({
+const PostCard = ({
   image,
   title,
   category,
-  author,
+  content,
   publishedDate,
   readingTime,
 }) => {
@@ -13,17 +13,18 @@ const BlogCard = ({
       <img
         src={image}
         alt={title}
-        width={"300px"}
+        width={"900px"}
         height={"300px"}
         className="rounded border-blue-600 border-6 "
       />
       <div className="rounded mt-6 bg-none py-4 relative overflow-hidden flex-auto border-solid text-sm">
         <div className="rounded mt-6 bg-none py-4 overflow-hidden flex-col border-solid text-sm align-middle">
-          <span className="font-bold break-words">{title}</span>
+          <span className="font-bold">{title}</span>
 
           <div className="flex flex-wrap">
             <div className="flex flex-col">
-              <span className="mr-2">{author}</span>
+              <img src="blog\public\vite.svg"></img>
+              <span className="mr-2">{content}</span>
               <span className="mr-2">{publishedDate}</span>
               <span>{readingTime} min read</span>
               <span className="mr-2 font-bold">({category})</span>
@@ -37,7 +38,7 @@ const BlogCard = ({
 
 import PropTypes from "prop-types";
 
-BlogCard.propTypes = {
+PostCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
@@ -47,4 +48,4 @@ BlogCard.propTypes = {
   readingTime: PropTypes.number.isRequired,
 };
 
-export default BlogCard;
+export default PostCard;

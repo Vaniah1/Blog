@@ -2,7 +2,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import BlogCard from "../components/BlogCard";
-import blogsData from "/Users/DirectEd Student/Blog/blog/blog-editor-backend/blogsData.json";
+import blogsData from "../assets/blogsData.json";
+import "../Home.css";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         ))}
       </div>
 
+      <BlogCard />
       <Footer />
     </>
   );
