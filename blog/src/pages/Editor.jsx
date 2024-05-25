@@ -86,7 +86,7 @@ const Editor = () => {
               id="title"
               value={formData.title}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <div className="form-group">
@@ -97,7 +97,7 @@ const Editor = () => {
               id="image"
               value={formData.image}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <div className="form-group">
@@ -108,7 +108,7 @@ const Editor = () => {
               id="category"
               value={formData.category}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <div className="form-group">
@@ -119,7 +119,7 @@ const Editor = () => {
               id="author"
               value={formData.author}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <div className="form-group">
@@ -130,7 +130,7 @@ const Editor = () => {
               id="authorPic"
               value={formData.authorPic}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <div className="form-group">
@@ -141,7 +141,7 @@ const Editor = () => {
               id="published_date"
               value={formData.published_date}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <div className="form-group">
@@ -152,7 +152,7 @@ const Editor = () => {
               id="reading_time"
               value={formData.reading_time}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <div className="form-group col-span-2">
@@ -162,7 +162,7 @@ const Editor = () => {
               id="content"
               value={formData.content}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             ></textarea>
           </div>
           <div className="form-group">
@@ -173,12 +173,12 @@ const Editor = () => {
               id="tags"
               value={formData.tags}
               onChange={handleChange}
-              className="border border-gray-400 rounded-md px-2 py-1"
+              className="border border-gray-400 rounded-md px-2 py-1 block"
             />
           </div>
           <button
             type="submit"
-            className="submit-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="submit-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded block"
           >
             Save
           </button>
