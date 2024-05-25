@@ -1,5 +1,7 @@
 import "../blog.css";
 import { useState } from "react";
+import empty from "../img/emptyheart.png";
+import full from "../img/fullheart.png";
 
 const PostCard = ({
   image,
@@ -11,14 +13,11 @@ const PostCard = ({
   details,
   author,
 }) => {
+  const [like, setLike] = useState(false);
 
- const [like, setLike] = useState(false);
-
-
- function toggleLike() {
-  setLike(!like);
-  
- }
+  function toggleLike() {
+    setLike(!like);
+  }
 
   return (
     <div className=" mt-6 w-64 py-4 px-4  relative flex-col flex justify-center">
@@ -37,20 +36,29 @@ const PostCard = ({
             <div className="flex flex-col">
               <span className="mr-2 font-bold">({category})</span>
               <span className="mr-2">{publishedDate}</span>
-              <span>{readingTime} min read</span>  
+              <span>{readingTime} min read</span>
               <span className="mr-2 postcard--content">{content}</span>
               <span className="postcard--details">{details}</span>
-            </div>  
+            </div>
           </div>
-        </div>   
-        <div onClick={toggleLike} className="postcard--like">
-        <img src={like ? "../public/img/fullheart.png" : "../public/img/emptyheart.png"} alt="like" className="like--button" title="Like"/>
-        
-        {like && <span className="like--text animate-bounce">Thanks for Liking! </span> }
         </div>
-          <span className="postcard--author">by {author}</span>       
+        <div onClick={toggleLike} className="postcard--like">
+          <img
+            src={like ? { full } : { empty }}
+            alt="like"
+            className="like--button"
+            title="Like"
+          />
+
+          {like && (
+            <span className="like--text animate-bounce">
+              Thanks for Liking!{" "}
+            </span>
+          )}
+        </div>
+        <span className="postcard--author">by {author}</span>
       </div>
-        
+
       <hr className="font-bold" />
     </div>
   );
@@ -61,6 +69,7 @@ import PropTypes from "prop-types";
 PostCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  details: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
