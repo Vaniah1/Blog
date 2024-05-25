@@ -68,11 +68,11 @@ const Editor = () => {
   return (
     <>
       <Header />
-      <div className="editor-container">
-        <h1 className="font-bold text-3xl">Editor Page</h1>
+      <div className="py-5 px-5">
+        <h1 className="font-bold text-3xl py-5">Editor Page</h1>
         <form
           onSubmit={handleSubmit}
-          className="editor-form grid grid-cols-2 gap-4"
+          className="editor-form grid grid-cols-2 mt-4 mb-4 py-4 px-4 gap-4"
         >
           <div className="form-group">
             <label htmlFor="title">Title:</label>

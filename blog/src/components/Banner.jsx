@@ -3,7 +3,7 @@ import { TfiWrite } from "react-icons/tfi";
 
 export default function Banner() {
   return (
-    <div className="bg-black text-white w-full p-6">
+    <div className="bg-black text-white w-full p-6 ">
       <h1 className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl ">
         Welcome to Bloggy
       </h1>

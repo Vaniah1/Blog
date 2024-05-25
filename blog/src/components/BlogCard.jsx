@@ -1,26 +1,35 @@
 const BlogCard = ({
   image,
   title,
-  content,
   category,
   author,
   publishedDate,
   readingTime,
 }) => {
   return (
-    <>
-      <div className="blog-card grid">
-        <img src={image} alt={title} width={"300px"} />
+    <div className=" mt-6 w-64 py-4 px-4 border-solid relative flex-col flex">
+      <img
+        src={image}
+        alt={title}
+        width={"300px"}
+        height={"300px"}
+        className="rounded border-blue-600 border-6 "
+      />
+      <div className="rounded mt-6 bg-none py-4   relative  overflow-hidden flex-auto border-solid text-sm">
+        <div className="rounded mt-6 bg-none py-4  overflow-hidden flex-col border-solid text-sm align-middle">
+          <span className="font-bold break-words">{title}</span>
+
+          <div className="flex flex-wrap">
+            <div className="flex flex-col">
+              <span className="mr-2">{author}</span>
+              <span className="mr-2">{publishedDate}</span>
+              <span>{readingTime} min read</span>
+              <span className="mr-2 font-bold">({category})</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <h2 className="font-bold">{title}</h2>
-      <p className="max-w-10">{content}</p>
-      <div className="blog-meta">
-        <div>{category}</div>
-        <div>{author}</div>
-        <div>{publishedDate}</div>
-        <div>{readingTime} min read</div>
-      </div>
-    </>
+    </div>
   );
 };
 
