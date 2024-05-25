@@ -1,11 +1,12 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
 const Home = () => {
   return (
     <> 
       <Header />
-      <h3>Mambo</h3>
+      <Banner />
       <Footer />
     </>
   );
