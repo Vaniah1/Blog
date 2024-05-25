@@ -11,7 +11,7 @@ const BlogCard = ({
 }) => {
   return (
     <div className=" mt-6 w-64 py-4 px-4  relative flex-col flex">
-      <Link to={`/blog`}>
+      <Link to={`/blogs`}>
         <img
           src={image}
           alt={title}
