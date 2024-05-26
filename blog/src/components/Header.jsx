@@ -21,6 +21,7 @@ const Header = () => {
     { path: "/blogs", link: "Blogs" },
     { path: "/editor", link: "Editor" },
     { path: "/contact", link: "Contact" },
+    { path: "/signin", link: "Sign In" },
   ];
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -41,14 +42,16 @@ const Header = () => {
 
         {/* Nav items */}
         <ul className="md:flex gap-12 text-lg hidden">
-          {navItems.map(({ path, link }, index) => (
-            <li
-              key={index}
-              className="text-white hover:opacity-80 active:text-purple-600"
-            >
-              <NavLink to={path}>{link}</NavLink>
-            </li>
-          ))}
+          {navItems
+            .filter(({ path }) => path !== "/signin")
+            .map(({ path, link }, index) => (
+              <li
+                key={index}
+                className="text-white hover:opacity-80 active:text-purple-600"
+              >
+                <NavLink to={path}>{link}</NavLink>
+              </li>
+            ))}
         </ul>
 
         {/* Search bar */}
