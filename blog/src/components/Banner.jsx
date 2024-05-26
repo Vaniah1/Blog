@@ -5,7 +5,7 @@ import "../Home.css";
 export default function Banner() {
   return (
     <div className="bg-black p-6 banner">
-      <h1 className="flex justify-center text-center  font-bold text-6xl banner--heading">
+      <h1 className=" justify-center text-center  font-bold text-6xl banner--heading">
         Welcome to<span className="banner--bloggy"> Bloggy</span>
       </h1>
       <h2 className=" flex justify-center font-bold text-center m-5 banner--description">
