@@ -1,3 +1,4 @@
+import "../Home.css";
 import { NavLink } from "react-router-dom";
 import {
   FaDribbble,
@@ -32,10 +33,10 @@ const Header = () => {
   );
 
   return (
-    <header className="bg-black text-white sticky top-0 left-0 right-0 z-50">
+    <header className=" text-white sticky top-0 left-0 right-0 z-50 nav--header">
       <nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between items-center">
-        <a href="/" className="text-xl font-bold text-white hover:opacity-75">
-          Bloggy<span className="text-blue-600">BG</span>
+        <a href="/" className="text-xl font-bold hover:opacity-75 logo">
+          Bloggy<span className="logo--BG">BG</span>
         </a>
 
         {/* Nav items */}
@@ -75,7 +76,7 @@ const Header = () => {
         </div>
 
         {/* Menu icons */}
-        <div className="text-white lg:flex gap-4 items-center md:flex hidden">
+        <div className="text-white lg:flex gap-4 items-center md:flex hidden ">
           <a
             className=" text-white hover:text-blue-600 active:text-blue-600"
             href="https://www.google.com/"
@@ -112,14 +113,14 @@ const Header = () => {
       {/* menu items mobile */}
       <div>
         <ul
-          className={`md:hidden text-white  gap-14 text-lg block space-y-8 px-4 py-2 mt-14 bg-black ${
+          className={`md:hidden text-white  gap-14 text-lg block space-y-8 px-4 py-2 mt-14 mobile--menu ${
             isMenuOpen
               ? "sticky top-0 left-0 w-full transition-all ease-out duration-150"
               : "hidden"
           }`}
         >
           {navItems.map(({ path, link }, index) => (
-            <li key={index} className=" hover:text-blue-600">
+            <li key={index} className=" mobile--hover">
               <NavLink onClick={toggleMenu} to={path}>
                 {link}
               </NavLink>

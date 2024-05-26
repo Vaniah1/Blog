@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import BlogCard from "../components/BlogCard";
 import blogsData from "../assets/blogsData.json";
-import "../Home.css";
+
 
 const Home = () => {
   return (

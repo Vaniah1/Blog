@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import "../Home.css";
 
 const Editor = () => {
   const [formData, setFormData] = useState({
@@ -69,8 +70,8 @@ const Editor = () => {
     <>
       <Header />
       <div className="editor-container">
-        <div className="bg-black text-white w-full p-6 ">
-          <h1 className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl m-5">
+        <div className="bg-black text-white w-full p-6 banner">
+          <h1 className="  flex justify-center text-center text-white font-bold text-6xl m-5">
             Editor Page
           </h1>
         </div>

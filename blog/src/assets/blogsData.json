@@ -47,7 +47,7 @@
   {
     "id": 4,
     "title": "Europe Must-Do's",
-    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1mYFmA.img?w=1920&h=1080&q=60&m=2&f=webp",
+    "image": "https://images.pexels.com/photos/547494/pexels-photo-547494.jpeg?auto=compress&cs=tinysrgb&w=400",
     "category": "Travel",
     "author": "Jani Vinad",
     "authorPic": "author1.jpg",
@@ -61,8 +61,8 @@
   },
   {
     "id": 5,
-    "title": "Best Deals on Hotels and Holidays",
-    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1l2YLb.img?w=1920&h=1080&q=60&m=2&f=webp",
+    "title": "Best Deals on Holidays",
+    "image": "https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&w=400",
     "category": "Travel",
     "author": "Zuri Pearson",
     "authorPic": "author1.jpg",
@@ -92,7 +92,7 @@
   {
     "id": 7,
     "title": "Incredible Gochujang Sauce",
-    "image": "https://pinchofyum.com/wp-content/uploads/Gochujang-Sauce-1-2-960x1344.jpg",
+    "image": "https://images.pexels.com/photos/13717455/pexels-photo-13717455.jpeg?cs=srgb&dl=pexels-valeria-boltneva-13717455.jpg&fm=jpg",
     "category": "Food",
     "author": "Dylang Wang Chen",
     "authorPic": "author1.jpg",
@@ -121,7 +121,7 @@
   },
   {
     "id": 9,
-    "title": "British Shows: Future-Predictors",
+    "title": "TV-Shows:Future Predictors",
     "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1mieFf.img?w=1920&h=1080&q=60&m=2&f=webp",
     "category": "Entertainment",
     "author": "Javi Kareem",
@@ -136,7 +136,7 @@
   },
   {
     "id": 10,
-    "title": "Google Meet: Adaptive Audio Combines Laptop Mics",
+    "title": "Adaptive Audio",
     "image": "https://duet-cdn.vox-cdn.com/thumbor/0x0:1600x1000/750x500/filters:focal(800x500:801x501):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/25460254/googleadaptiveaudio.jpg",
     "category": "Technolgy",
     "author": "Ollie James",
