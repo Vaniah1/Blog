@@ -5,6 +5,7 @@
     margin-right: 2.5rem;
     justify-content: center;
     align-items: center;
+    height: 500px;
 }
 
 .chat-bot{
@@ -14,7 +15,7 @@
     position: relative;
     border-radius: 6px;
     font-weight: 900;
-    
+
 }
 .chat-bot:hover{
     opacity: 0.7;
@@ -65,7 +66,7 @@
 
 .home--blog_image {
     width: 300px;
-    height: 300px;
+    height: 250px;
 }
 
 .banner {
