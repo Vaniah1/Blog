@@ -23,9 +23,12 @@ const Blogs = () => {
             author={blog.author}
             publishedDate={blog.published_date}
             readingTime={blog.reading_time}
+            details={blog.details}
           />
         ))}
+      
       </div>
+      
       <Footer />
     </>
   );

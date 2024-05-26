@@ -1,4 +1,5 @@
 import "../blog.css";
+import { useState } from "react";
 
 const PostCard = ({
   image,
@@ -7,9 +8,20 @@ const PostCard = ({
   content,
   publishedDate,
   readingTime,
+  details,
+  author,
 }) => {
+
+ const [like, setLike] = useState(false);
+
+
+ function toggleLike() {
+  setLike(!like);
+  
+ }
+
   return (
-    <div className=" mt-6 w-64 py-4 px-4  relative flex-col flex">
+    <div className=" mt-6 w-64 py-4 px-4  relative flex-col flex justify-center">
       <img
         src={image}
         alt={title}
@@ -19,19 +31,27 @@ const PostCard = ({
       />
       <div className="rounded mt-6 bg-none py-4 relative overflow-hidden flex-auto border-solid text-sm">
         <div className="rounded mt-6 bg-none py-4 overflow-hidden flex-col border-solid text-sm align-middle">
-          <span className="font-bold">{title}</span>
+          <span className="postcard--title">{title}</span>
 
           <div className="flex flex-wrap">
             <div className="flex flex-col">
-              <img src="blog\public\vite.svg"></img>
-              <span className="mr-2">{content}</span>
-              <span className="mr-2">{publishedDate}</span>
-              <span>{readingTime} min read</span>
               <span className="mr-2 font-bold">({category})</span>
-            </div>
+              <span className="mr-2">{publishedDate}</span>
+              <span>{readingTime} min read</span>  
+              <span className="mr-2 postcard--content">{content}</span>
+              <span className="postcard--details">{details}</span>
+            </div>  
           </div>
+        </div>   
+        <div onClick={toggleLike} className="postcard--like">
+        <img src={like ? "../public/img/fullheart.png" : "../public/img/emptyheart.png"} alt="like" className="like--button" title="Like"/>
+        
+        {like && <span className="like--text animate-bounce">Thanks for Liking! </span> }
         </div>
+          <span className="postcard--author">by {author}</span>       
       </div>
+        
+      <hr className="font-bold" />
     </div>
   );
 };
