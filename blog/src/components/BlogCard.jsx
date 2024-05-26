@@ -1,3 +1,5 @@
+import "../blog.css"
+
 const BlogCard = ({
   image,
   title,
@@ -18,7 +20,7 @@ const BlogCard = ({
         <div>{category}</div>
         <div>{author}</div>
         <div>{publishedDate}</div>
-        <div>{readingTime} min read</div>
+        <div className="min-read">{readingTime} min </div>
       </div>
     </>
   );

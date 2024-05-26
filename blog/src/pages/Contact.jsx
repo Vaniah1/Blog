@@ -5,6 +5,10 @@ const Contact = () => {
   return (
     <>
       <Header />
+
+      <div className="bg-black text-white w-full p-6">
+        <h1  className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl m-5">Contact Page</h1>
+      </div>
       <div className="container mx-auto py-8">
         <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
         <form>

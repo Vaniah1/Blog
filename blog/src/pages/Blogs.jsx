@@ -1,25 +1,15 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BlogCard from "../components/BlogCard.jsx";
-import blogsData from "/Users/DirectEd Student/Blog/blog/blog-editor-backend/blogsData.json";
+import blogsData from "/Users/HP/Bloggy/Blog-1/blog/src/pages/Blogs.jsx";
 
 const Blogs = () => {
   return (
     <>
       <Header />
-      {blogsData.map((blog) => (
-        <BlogCard
-          key={blog.id}
-          image={blog.image}
-          title={blog.title}
-          content={blog.content}
-          category={blog.category}
-          author={blog.author}
-          publishedDate={blog.published_date}
-          readingTime={blog.reading_time}
-        />
-      ))}
-
+       <div className="bg-black text-white w-full p-6">
+        <h1  className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl m-5">Blog Page</h1>
+       </div>
       <Footer />
     </>
   );

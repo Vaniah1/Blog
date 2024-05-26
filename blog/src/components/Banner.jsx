@@ -7,10 +7,10 @@ export default function Banner() {
       <h1 className="animate-pulse  flex justify-center text-center text-white font-bold text-6xl ">
         Welcome to Bloggy
       </h1>
-      <p className="  text-white flex justify-center font-bold text-center m-5">
+      <h2 className="  text-white flex justify-center font-bold text-center m-5">
         Your go-to destination for insightful articles, engaging stories, and
         thought-provoking discussions. Bloggy is for everyone.
-      </p>
+      </h2>
       <div>
         <Link
           to="/editor"
