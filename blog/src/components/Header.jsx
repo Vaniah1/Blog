@@ -42,16 +42,14 @@ const Header = () => {
 
         {/* Nav items */}
         <ul className="md:flex gap-12 text-lg hidden">
-          {navItems
-            .filter(({ path }) => path !== "/signin")
-            .map(({ path, link }, index) => (
-              <li
-                key={index}
-                className="text-white hover:opacity-80 active:text-purple-600"
-              >
-                <NavLink to={path}>{link}</NavLink>
-              </li>
-            ))}
+          {navItems.map(({ path, link }, index) => (
+            <li
+              key={index}
+              className="text-white hover:opacity-80 active:text-purple-600"
+            >
+              <NavLink to={path}>{link}</NavLink>
+            </li>
+          ))}
         </ul>
 
         {/* Search bar */}
