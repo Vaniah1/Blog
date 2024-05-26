@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 // Endpoint to get blog data
 app.get("/api/blogs", (req, res) => {
-  const filePath = "./blogsData.json";
+  const filePath = "../src/assets/blogsData.json";
   fs.readFile(filePath, (err, data) => {
     if (err) {
       return res.status(500).send("Error reading file");
@@ -27,7 +27,7 @@ app.get("/api/blogs", (req, res) => {
 // Endpoint to save new blog data
 app.post("/api/blogs", (req, res) => {
   const blogData = req.body;
-  const filePath = "./blogsData.json";
+  const filePath = "../src/assets/blogsData.json";
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
