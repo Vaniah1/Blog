@@ -21,7 +21,6 @@ const Header = () => {
     { path: "/blogs", link: "Blogs" },
     { path: "/editor", link: "Editor" },
     { path: "/contact", link: "Contact" },
-    { path: "/signin", link: "Sign In" },
   ];
   const [searchTerm, setSearchTerm] = useState("");
 
