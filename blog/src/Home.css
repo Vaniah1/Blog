@@ -7,6 +7,24 @@
     align-items: center;
 }
 
+.chat-bot{
+    background: white;
+    color:purple;
+    padding: 20px;
+    position: relative;
+    border-radius: 6px;
+    font-weight: 900;
+    
+}
+.chat-bot:hover{
+    opacity: 0.7;
+    
+}
+.chat-bot:active{
+    color: white;
+    background: purple;
+}
+
 .home--blogs {  
     display: inline-grid;
     background-color: #fff;

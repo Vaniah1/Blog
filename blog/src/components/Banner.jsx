@@ -12,6 +12,16 @@ export default function Banner() {
         Your go-to destination for insightful articles, engaging stories, and
         thought-provoking discussions. Bloggy is for everyone.
       </h2>
+      <button className="chat-bot bg-black text-white rounded py-2 px-1">
+        <a href="https://blogchatbot2-group9.streamlit.app/">
+          Meta Llama Chat Bot
+          <img
+            src="https://img.icons8.com/?size=100&id=PvvcWRWxRKSR&format=png&color=000000"
+            alt="meta"
+            width={"30px"}
+          />
+        </a>
+      </button>
       <div>
         <Link
           to="/editor"
